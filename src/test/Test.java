@@ -10,20 +10,17 @@ package test;
  * @author 卢跃凯
  */
 public class Test {
-    
-    public static int negetiveNumber(int x){
-       
-        
-        return Integer.reverseBytes(x);
-    }
 
-    /**
-     * @param args the command line arguments
-     */
+    static int func(int x) {
+        int countx = 0;
+        while (x != 0) {
+            countx++;
+            x = x & (x - 1);
+        }
+        return countx;
+    }
     public static void main(String[] args) {
-        // TODO code application logic here
-        int result = Test.negetiveNumber(1);
+        int result = Test.func(254);
         System.out.println(result);
     }
-    
 }
