@@ -3,20 +3,24 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+
 package demo0424;
 
 /**
  * lyk_explanation:This is a demo
- *
  * @author lyk
- * @date 2017-4-24
+ * @date   2017-4-26
  *
  */
-public class Test {
-
+public class TestInteger {
     public static void main(String[] args) {
-        String s1 ="hdfs://datanode32:8020";
-        String result = s1.split(":")[0]+":"+s1.split(":")[1];
-        System.out.println(result);
+        Integer i1 = new Integer(4);
+        Integer i2 = new Integer(4);
+        int s1 = i1;
+        int s2 = i2;
+        System.out.println(i1==i2);
+        System.out.println(s1==s2);
+        System.out.println(i1==s1);
     }
+
 }

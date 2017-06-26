@@ -3,20 +3,23 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package demo0424;
+
+package test;
 
 /**
  * lyk_explanation:This is a demo
- *
  * @author lyk
- * @date 2017-4-24
+ * @date   2017-4-30
  *
  */
-public class Test {
-
+public class TestMod {
+    
+    public static  int getMod(int n, int m){
+        return n & (m-1);
+    }  
+            
     public static void main(String[] args) {
-        String s1 ="hdfs://datanode32:8020";
-        String result = s1.split(":")[0]+":"+s1.split(":")[1];
-        System.out.println(result);
+        System.out.println(getMod(7, 15));
     }
+
 }
